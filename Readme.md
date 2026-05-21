@@ -48,3 +48,7 @@ A customer management CRM built with JavaScript that allows users to create, edi
 ### Editing a Client
 
 ![Editing client](./Previews/preview-2.png)
+
+## Live Demo
+
+[Try the CRM here](https://tu-proyecto.vercel.app)
