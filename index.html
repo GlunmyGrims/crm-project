@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM</title>
+    <link rel="stylesheet" href="/Styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="crm">
+      <!-- Top bar -->
+      <form id="crm__form__fields" novalidate>
+        <div class="crm__topbar">
+          <div class="crm__topbar-title">Add client</div>
+
+          <div class="crm__form">
+            <div class="crm__field">
+              <label class="crm__label" for="inp-name">Name</label>
+              <input
+                class="crm__input"
+                id="inp-name"
+                type="text"
+                placeholder="e.g. Jane Smith"
+              />
+              <span id="span-error-name" class="crm-mostrar-error"></span>
+            </div>
+
+            <div class="crm__field">
+              <label class="crm__label" for="inp-email">Email</label>
+              <input
+                class="crm__input"
+                id="inp-email"
+                type="email"
+                placeholder="name@example.com"
+              />
+              <span id="span-error-email" class="crm-mostrar-error"></span>
+            </div>
+
+            <div class="crm__field">
+              <label class="crm__label" for="inp-phone">Phone</label>
+              <input
+                class="crm__input"
+                id="inp-phone"
+                type="text"
+                placeholder="+1 555 000 0000"
+              />
+              <span id="span-error-phone" class="crm-mostrar-error"></span>
+            </div>
+
+            <div class="crm__field">
+              <label class="crm__label">&nbsp;</label>
+              <button id="btn-add" class="crm__btn crm__btn--add">
+                + Add client
+              </button>
+              <span class="crm-base-error"></span>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <!-- Table -->
+      <div class="crm__table-wrap">
+        <table class="crm__table">
+          <thead>
+            <tr>
+              <th class="crm__th">ID</th>
+              <th class="crm__th">Name</th>
+              <th class="crm__th">Email</th>
+              <th class="crm__th">Phone</th>
+              <th class="crm__th">Registered</th>
+              <th class="crm__th">Status</th>
+              <th class="crm__th">Actions</th>
+            </tr>
+          </thead>
+
+          <tbody id="crm-body">
+            <!-- Rendered by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script type="module" src="/Js/app.js"></script>
+  </body>
+</html>
