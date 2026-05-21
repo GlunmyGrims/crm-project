@@ -51,4 +51,4 @@ A customer management CRM built with JavaScript that allows users to create, edi
 
 ## Live Demo
 
-[Try the CRM here](https://tu-proyecto.vercel.app)
+[Try the CRM here](https://crm-project-beta-eight.vercel.app/)
